@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="750.0" styleClass="background" stylesheets="@/css/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox layoutX="238.0" layoutY="51.0" prefHeight="324.0" prefWidth="162.0" spacing="16.0" styleClass="vbox" stylesheets="@/css/stylesheet.css">
+         <children>
+            <Label text="ID :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="195.0" text="Név :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Kategória :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Gyártó :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Memória (MB) :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Kiadás éve :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Memória típus :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Darab :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="375.0" layoutY="51.0" prefHeight="294.0" prefWidth="243.0" spacing="12.0" styleClass="vbox" stylesheets="@/css/stylesheet.css">
+         <children>
+            <TextField fx:id="tfId" />
+            <TextField fx:id="tfName" />
+            <TextField fx:id="tfCategory" />
+            <TextField fx:id="tfManufacturer" />
+            <TextField fx:id="tfBuiltinmemory" />
+            <TextField fx:id="tfYear" />
+            <TextField fx:id="tfMemorytype" />
+            <TextField fx:id="tfPieces" />
+         </children>
+      </VBox>
+      <TableView fx:id="tvKeszlet" layoutX="25.0" layoutY="393.0" onMouseClicked="#handleMouseAction" prefHeight="290.0" prefWidth="700.0" stylesheets="@/css/stylesheet.css">
+        <columns>
+            <TableColumn fx:id="collId" prefWidth="39.0" text="ID" />
+            <TableColumn fx:id="collName" prefWidth="103.0" text="Név" />
+            <TableColumn fx:id="collCategory" prefWidth="74.0" text="Kategória" />
+            <TableColumn fx:id="collManufacturer" prefWidth="132.0" text="Gyártó" />
+            <TableColumn fx:id="collBuiltinmemory" prefWidth="93.0" text="Memória (MB)" />
+            <TableColumn fx:id="collYear" prefWidth="77.0" text="Kiadás éve" />
+            <TableColumn fx:id="collMemorytype" prefWidth="97.0" text="Memória típus" />
+            <TableColumn fx:id="collPieces" prefWidth="74.0" text="Darab" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBeill" alignment="CENTER" layoutX="74.0" layoutY="66.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="39.0" prefWidth="121.0" styleClass="buttonOK" stylesheets="@/css/stylesheet.css" text="Beillesztés">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/icons/upload.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnFrissites" layoutX="74.0" layoutY="131.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="39.0" prefWidth="121.0" styleClass="buttonUPD" stylesheets="@/css/stylesheet.css" text="Frissítés">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/icons/update.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets right="11.0" />
+         </padding></Button>
+      <Button fx:id="btnTorles" layoutX="74.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="39.0" prefWidth="121.0" styleClass="buttonDEL" stylesheets="@/css/stylesheet.css" text="Törlés">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/icons/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets right="18.0" />
+         </padding></Button>
+      <Label layoutX="177.0" layoutY="-14.0" prefHeight="80.0" prefWidth="445.0" styleClass="label2" stylesheets="@/css/stylesheet.css" text=" Videókártya nyilvántartó" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

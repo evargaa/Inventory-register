@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox layoutX="14.0" layoutY="64.0" prefHeight="260.0" prefWidth="124.0" spacing="16.0">
+         <children>
+            <Label text="ID">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="195.0" text="Név">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Category">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Manufacturer">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Built-in memory">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Year">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Memorytype">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Darab">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="138.0" layoutY="64.0" prefHeight="231.0" prefWidth="243.0" spacing="12.0">
+         <children>
+            <TextField fx:id="tfId" />
+            <TextField fx:id="tfName" />
+            <TextField fx:id="tfCategory" />
+            <TextField fx:id="tfManufacturer" />
+            <TextField fx:id="tfBuiltinmemory" />
+            <TextField fx:id="tfYear" />
+            <TextField fx:id="tfMemorytype" />
+            <TextField fx:id="tfPieces" />
+         </children>
+      </VBox>
+      <TableView fx:id="tvKeszlet" layoutX="396.0" layoutY="67.0" onMouseClicked="#handleMouseAction" prefHeight="200.0" prefWidth="498.0" stylesheets="@css/tableview.css">
+        <columns>
+            <TableColumn fx:id="collId" prefWidth="33.0" text="ID" />
+            <TableColumn fx:id="collName" prefWidth="34.0" text="Név" />
+            <TableColumn fx:id="collCategory" prefWidth="64.0" text="Category" />
+            <TableColumn fx:id="collManufacturer" text="Manufacturer" />
+            <TableColumn fx:id="collBuiltinmemory" prefWidth="105.0" text="Built-in memory (MB)" />
+            <TableColumn fx:id="collYear" prefWidth="36.0" text="Year" />
+            <TableColumn fx:id="collMemorytype" prefWidth="69.0" text="Memory type" />
+            <TableColumn fx:id="collPieces" prefWidth="75.0" text="Darab" />
+        </columns>
+         <styleClass>
+            <String fx:value="table-view" />
+            <String fx:value="column-header-background" />
+         </styleClass>
+      </TableView>
+      <Button fx:id="btnBeill" layoutX="94.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Beillesztés">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnFrissites" layoutX="345.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Frissítés">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btnTorles" layoutX="230.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Törlés">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

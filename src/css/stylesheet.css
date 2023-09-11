@@ -1,0 +1,97 @@
+.background {
+    -fx-background-color: #46535E;
+}
+.label {
+	-fx-alignment:center;
+	-fx-text-fill:#2980B9;
+	-fx-font-family: "Segoe UI Light";
+}
+.label2{
+	-fx-text-fill:#D3D7D7;
+	-fx-font-family: "Segoe UI Semibold";
+
+}
+.vbox {
+	-fx-background-color:#ECF0F1;
+	-fx-background-radius: 15px;
+  	-fx-background: #46535E;
+ 	-fx-padding: 20px;
+  	-fx-width: 200px;
+ 	-fx-height: 150px;
+}
+
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #ECF0F1;
+    -fx-background-color: #ECF0F1;
+    -fx-table-cell-border-color: #AEB0B1;
+    -fx-table-header-border-color: #AEB0B1;
+    -fx-padding: 5;
+    -fx-background-radius: 15px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: #AEB0B1;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 13px;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #2980B9;
+    -fx-alignment: center;
+}
+
+
+.button {   
+    -fx-border-color: #2980B9;
+    -fx-border-width: 2px;
+    -fx-border-radius: 11px;
+    -fx-background-radius: 15px;
+    -fx-background-color: #ECF0F1;
+    -fx-font-family: "Segoe UI Light";
+    -fx-font-size: 11pt;
+    -fx-text-fill: #2980B9;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-alignment:center;
+}
+
+.button:hover {
+    -fx-background-color: #A6A9AA;
+}
+
+.buttonDEL:pressed, .buttonDEL:default:hover:pressed {
+  -fx-background-color: #c23b22;
+  -fx-text-fill: black;
+}
+
+.buttonUPD:pressed, .buttonUPD:default:hover:pressed {
+  -fx-background-color: #f4dc9c;
+  -fx-text-fill: black;
+}
+
+.buttonOK:pressed, .buttonOK:default:hover:pressed {
+  -fx-background-color: #9cdb7c;
+  -fx-text-fill: black;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
